@@ -15,13 +15,23 @@ footer {
     padding-top:12px;
 }
 
+.ig-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* jarak antar foto */
+    justify-content: center; /* supaya foto di tengah */
+}
+
 .ig-thumbnail {
-    width: 100px;
-    height: 100px;
-    float: left;
+    width: 120px;
+    height: 120px;
     overflow: hidden;
+    border-radius: 10px; /* biar agak rounded */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .ig-thumbnail img {
-    width: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* biar foto tidak distorsi dan nge-cover seluruh thumbnail */
 }

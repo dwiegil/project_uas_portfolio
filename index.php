@@ -59,7 +59,7 @@ foreach($result['data'] as $photo) {
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#home">Sandhika Galih</a>
+        <a class="navbar-brand" href="#home">Dwi Egil Radhiatur</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -83,9 +83,9 @@ foreach($result['data'] as $photo) {
     <div class="jumbotron" id="home">
       <div class="container">
         <div class="text-center">
-          <img src="img/profile1.png" class="rounded-circle img-thumbnail">
-          <h1 class="display-4">Sandhika Galih</h1>
-          <h3 class="lead">Lecturer | Programmer | Youtuber</h3>
+         <img src="img/eji.jpeg" class="rounded-circle img-thumbnail" style="width: 300px; height: 300px; object-fit: cover;">
+          <h1 class="display-4">Dwi Egil Radhiatur</h1>
+          <h3 class="lead">Mahasiswa UIN Imam Bonjol Padang</h3>
         </div>
       </div>
     </div>
@@ -101,10 +101,10 @@ foreach($result['data'] as $photo) {
         </div>
         <div class="row justify-content-center">
           <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+            <p>maunya sih jadi orang dewasa yang keren, tapi nyatanya sering kebingungan mau makan apa. hidup ini kayak drama korea, kadang bikin baper, kadang bikin pengen ketawa ketiwi sendiri.</p>
           </div>
           <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+            <p>pengen hidup bebas tanpa beban, tapi nyatanya tiap hari dibebanin tugas sama perut yang selalu laper. ahli banget buat ngeles waktu diminta kerjaan, tapi pas diminta jajan? langsung semangat 45.</p>
           </div>
         </div>
       </div>
@@ -156,12 +156,12 @@ foreach($result['data'] as $photo) {
             </div>
           </div>
           <div class="row mt-3 pb-3">
-            <div class="col">
-              <?php foreach( $photos as $photo) : ?>
-              <div class="ig-thumbnail">
-                <img src="<?= $photo; ?>">
-              </div>
-              <?php endforeach; ?>
+            <div class="col ig-gallery">
+                <?php foreach( $photos as $photo) : ?>
+                <div class="ig-thumbnail">
+                  <img src="<?= $photo; ?>">
+                </div>
+                <?php endforeach; ?>
               </div>
             </div>
           </div>
@@ -181,27 +181,27 @@ foreach($result['data'] as $photo) {
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/11.jpeg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <p class="card-text"><strong>penunda profesional:</strong> spesialis nunda kerjaan sampe deadline tinggal 3 menit. skill: panik tapi produktif.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/12.jpeg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">bisa kerja di bawah tekanan, seperti tekanan hidup dan pertanyaan 'kapan lulus?'</p>
               </div>
             </div>
           </div>
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/14.jpeg" alt="Card image cap" style="width: 350px; height: 350px; object-fit: cover;">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><strong>fast learner:</strong> bisa ngerti materi dalam 5 menit (setelah 5 jam breakdown).</p>
               </div>
             </div>
           </div>   
@@ -210,17 +210,17 @@ foreach($result['data'] as $photo) {
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/15.jpeg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><strong>hacker perasaan:</strong> jago ngartiin chat "ok" jadi 12 makna berbeda dalam waktu 2 detik.</p>
               </div>
             </div>
           </div> 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/13.jpeg" alt="Card image cap" style="width: 350px; height: 460px; object-fit: cover;">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text"><strong>overthinker kreatif:</strong> bisa bikin 3 plot film dari satu senyuman orang asing.</p>
                 </p>
               </div>
             </div>
@@ -228,9 +228,9 @@ foreach($result['data'] as $photo) {
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/16.jpeg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><strong>penulis skenario kehidupan yang tidak terjadi:</strong> imajinasi terlalu aktif, kadang bingung mana yang beneran kejadian.</p>
               </div>
             </div>
           </div>
@@ -253,15 +253,15 @@ foreach($result['data'] as $photo) {
             <div class="card bg-primary text-white mb-4 text-center">
               <div class="card-body">
                 <h5 class="card-title">Contact Me</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Jika ada yang ingin ditanyakan silahkan hubungi aku.</p>
               </div>
             </div>
             
             <ul class="list-group mb-4">
               <li class="list-group-item"><h3>Location</h3></li>
-              <li class="list-group-item">My Office</li>
-              <li class="list-group-item">Jl. Setiabudhi No. 193, Bandung</li>
-              <li class="list-group-item">West Java, Indonesia</li>
+              <li class="list-group-item">My Home</li>
+              <li class="list-group-item">Jl. Patah Hati</li>
+              <li class="list-group-item">West Sumatera, Indonesia</li>
             </ul>
           </div>
 
