@@ -22,6 +22,22 @@ $urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyCpjz5V
 $result = get_CURL($urlLatestVideo);
 $latestVideoId = $result['items'][0]['id']['videoId'];
 
+
+// instagram API
+$result = get_CURL('https://graph.instagram.com/v22.0/me?fields=username,profile_picture_url,followers_count&access_token=IGAAcmU45YhGpBZAFBMWVM5dHBTTHVRRUFiZA2p4ZA0daTmp5Rmp0WXZAKMngwTUl2bVluY3c2aThTVlREbXRDbVl4Mnk4OVcyN3lFeFFGbk1TWkNIN3JHanR5YzRUU1drNGxEVUQwTXQwLWp4RzVIanFXWWlKSVNtSnBJc05oWU9HbwZDZD');
+$userNameIG = $result['username'];
+$profilePictureIG = $result['profile_picture_url'];
+$followersIG = $result['followers_count'];
+
+
+//latest ig post
+$result = get_CURL('https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,timestamp&access_token=IGAAcmU45YhGpBZAFBMWVM5dHBTTHVRRUFiZA2p4ZA0daTmp5Rmp0WXZAKMngwTUl2bVluY3c2aThTVlREbXRDbVl4Mnk4OVcyN3lFeFFGbk1TWkNIN3JHanR5YzRUU1drNGxEVUQwTXQwLWp4RzVIanFXWWlKSVNtSnBJc05oWU9HbwZDZD&limit=6');
+
+$photos = [];
+foreach($result['data'] as $photo) {
+  $photos[] = $photo['media_url'];
+}
+
 ?>
 
 <!doctype html>
@@ -114,6 +130,7 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
             <div class="col-md-8">
               <h5><?= $channelName; ?></h5>
               <p><?= $subscriber; ?> Subscribers.</p>
+              <div class="g-ytsubscribe" data-channelid="UCWme0IpQvwDicdxGqx2AcxQ" data-layout="default" data-count="hidden"></div>
             </div>
           </div>
           <div class="row mt-3 pb-3">
@@ -131,23 +148,20 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
         <div class="col-md-5">
           <div class="row">
             <div class="col-md-4">
-              <img src="img/profile2.png" width="200" class="rounded-circle img-thumbnail">
+              <img src="<?= $profilePictureIG; ?>" width="200" class="rounded-circle img-thumbnail">
             </div>
             <div class="col-md-8">
-              <h5>@giill.r</h5>
-              <p>300 Followers</p>
+              <h5><?= $userNameIG; ?></h5>
+              <p><?= $followersIG;?> Followers.</p>
             </div>
           </div>
           <div class="row mt-3 pb-3">
             <div class="col">
+              <?php foreach( $photos as $photo) : ?>
               <div class="ig-thumbnail">
-                <img src="img/thumbs/1.png">
+                <img src="<?= $photo; ?>">
               </div>
-              <div class="ig-thumbnail">
-                <img src="img/thumbs/2.png">
-              </div>
-              <div class="ig-thumbnail">
-                <img src="img/thumbs/3.png">
+              <?php endforeach; ?>
               </div>
             </div>
           </div>
@@ -303,5 +317,6 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
   </body>
 </html>
