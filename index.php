@@ -1,13 +1,27 @@
 <?php
-$curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCOD_0lT8SfY5FBhqCVmmElw&key=AIzaSyCpjz5Vu_-ibNAtPJM1wDftHXIkOmILchU');
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-$result = curl_exec($curl);
-curl_close($curl);
+function get_CURL($url) 
+{
+  $curl = curl_init();
+  curl_setopt($curl, CURLOPT_URL, $url);
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+  $result = curl_exec($curl);
+  curl_close($curl);
+  
+  return json_decode($result, true);
+}
 
 
-$result = json_decode($result, true);
-var_dump($result);
+$result = get_CURL('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCWme0IpQvwDicdxGqx2AcxQ&key=AIzaSyCpjz5Vu_-ibNAtPJM1wDftHXIkOmILchU');
+
+$youtubeProfilPic = $result['items'][0]['snippet']['thumbnails']['medium']['url'];
+$channelName = $result['items'][0]['snippet']['title'];
+$subscriber = $result['items'][0]['statistics']['subscriberCount'];
+
+// latest video
+$urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyCpjz5Vu_-ibNAtPJM1wDftHXIkOmILchU&channelId=UCWme0IpQvwDicdxGqx2AcxQ&maxResults=1&order=date&part=snippet';
+$result = get_CURL($urlLatestVideo);
+$latestVideoId = $result['items'][0]['id']['videoId'];
+
 ?>
 
 <!doctype html>
@@ -95,18 +109,18 @@ var_dump($result);
         <div class="col-md-5">
           <div class="row">
             <div class="col-md-4">
-              <img src="img/profile1.png" width="200" class="rounded-circle img-thumbnail">
+              <img src="<?= $youtubeProfilPic; ?>" width="200" class="rounded-circle img-thumbnail">
             </div>
             <div class="col-md-8">
-              <h5>WebProgrammingUNPAS</h5>
-              <p>700000 Subscribers.</p>
+              <h5><?= $channelName; ?></h5>
+              <p><?= $subscriber; ?> Subscribers.</p>
             </div>
           </div>
           <div class="row mt-3 pb-3">
             <div class="col">
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/rKVeFzox2pg?rel=0"
+                  src="https://www.youtube.com/embed/<?= $latestVideoId; ?>?rel=0"
                   allowfullscreen></iframe>
               </div>
             </div>
