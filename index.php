@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1">
 
     <title>My Portfolio</title>
   </head>
@@ -78,12 +78,47 @@
           </div>
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col-md-5">
-            <h5>WebProgramingUinIB</h5>
-            <img src="img/profile1.png" width="100">
+      <div class="row justify-content-center">
+        <!-- kolom pertama -->
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/profile1.png" width="200" class="rounded-circle img-thumbnail">
+            </div>
+            <div class="col-md-8">
+              <h5>WebProgrammingUNPAS</h5>
+              <p>700000 Subscribers.</p>
+            </div>
           </div>
-          <div class="col-md-5"></div>
+          <div class="row mt-3 pb-3">
+            <div class="col">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/rKVeFzox2pg?rel=0"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kolom kedua -->
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/profile2.png" width="200" class="rounded-circle img-thumbnail">
+            </div>
+            <div class="col-md-8">
+              <h5>@giill.r</h5>
+              <p>300 Followers</p>
+            </div>
+          </div>
+          <div class="row mt-3 pb-3">
+            <div class="col">
+              <div class="ig-thumbnail">
+                <img src="img/thumbs/1.png">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
