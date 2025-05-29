@@ -1,3 +1,15 @@
+<?php
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCOD_0lT8SfY5FBhqCVmmElw&key=AIzaSyCpjz5Vu_-ibNAtPJM1wDftHXIkOmILchU');
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+$result = curl_exec($curl);
+curl_close($curl);
+
+
+$result = json_decode($result, true);
+var_dump($result);
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -116,6 +128,12 @@
             <div class="col">
               <div class="ig-thumbnail">
                 <img src="img/thumbs/1.png">
+              </div>
+              <div class="ig-thumbnail">
+                <img src="img/thumbs/2.png">
+              </div>
+              <div class="ig-thumbnail">
+                <img src="img/thumbs/3.png">
               </div>
             </div>
           </div>
