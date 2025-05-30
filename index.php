@@ -172,49 +172,6 @@ foreach($result['data'] as $photo) {
       </div>
     </section>
 
-
-    <!-- Project -->
-    <section class="project" id="project">
-      <div class="container">
-        <div class="row pt-4 mb-4">
-          <div class="col text-center">
-            <h2>Project</h2>
-          </div>
-        </div>
-        <div class="row">
-
-        
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/pizza.jpeg" alt="Card image cap">
-             <div class="card-body text-center">
-             <p class="card-text">
-               aplikasi ini menyajikan menu pizza terstruktur berdasarkan kategori, menggunakan data yang dimuat dari file json.
-            </p>
-            <a href="http://localhost/rest-api/wpu-hut/latihan2.html" target="_blank" class="btn btn-dark mt-2">
-                See Detail
-            </a>
-             </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-         <div class="card">
-           <img class="card-img-top" src="img/film.jpeg" alt="Card image cap">
-           <div class="card-body text-center">
-              <p class="card-text">
-                aplikasi ini menyajikan koleksi film berdasarkan kategori tertentu, menggunakan data yang diambil dari file json.
-              </p>
-              <a href="http://localhost/rest-api/wpu-movie/index.html" target="_blank" class="btn btn-dark mt-2">
-                See Detail
-              </a>
-            </div>
-           </div>
-          </div>
-
-
-
-
     
     <!-- Portfolio -->
     <section class="portfolio bg-light" id="portfolio">
