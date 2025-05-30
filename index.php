@@ -72,6 +72,9 @@ foreach($result['data'] as $photo) {
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
           </ul>
@@ -101,10 +104,10 @@ foreach($result['data'] as $photo) {
         </div>
         <div class="row justify-content-center">
           <div class="col-md-5">
-            <p>maunya sih jadi orang dewasa yang keren, tapi nyatanya sering kebingungan mau makan apa. hidup ini kayak drama korea, kadang bikin baper, kadang bikin pengen ketawa ketiwi sendiri.</p>
+            <p>pengen banget hidup bebas tanpa beban, ngopi di balkon sambil liat langit, dengerin lagu galau padahal hati damai. tapi kenyataannya? tiap hari dibebani sama tugas numpuk, deadline kejar-kejaran, dan perut yang laper tiap dua jam sekali kayak alarm gak bisa dimatiin. aku mungkin bukan orang paling rajin, tapi kalau urusan ngeles dari kerjaan? level dewa. giliran disuruh ngerjain tugas, banyak alasan kayak “laptop-nya nge-lag” atau “lagi mikirin konsep dulu.” tapi begitu ada yang ngajak jajan atau delivery-an es kopi? langsung on fire, semangat 45, siap keluar rumah bahkan dalam kondisi hujan badai. hidup ini memang keras, tapi kita lebih keras (kalau urusannya ngemil).</p>
           </div>
           <div class="col-md-5">
-            <p>pengen hidup bebas tanpa beban, tapi nyatanya tiap hari dibebanin tugas sama perut yang selalu laper. ahli banget buat ngeles waktu diminta kerjaan, tapi pas diminta jajan? langsung semangat 45.</p>
+            <p>maunya sih jadi orang dewasa yang keren—yang tahu arah hidup, bisa masak sendiri, dan punya tabungan stabil. tapi kenyataannya? tiap hari masih bingung mau makan apa, kadang sarapan jadi makan siang, dan keputusan paling besar dalam sehari cuma “nasi goreng apa mie instan ya?” hidup ini tuh rasanya kayak drama korea: alurnya gak bisa ditebak, kadang bikin nangis gara-gara overthinking, kadang juga bikin ketawa sendiri cuma karena inget hal random. dan di tengah semua kekacauan itu, kita tetap jalan terus, dengan senyum yang kadang palsu tapi semangat yang masih nyala (walau sering lowbat).</p>
           </div>
         </div>
       </div>
@@ -133,7 +136,7 @@ foreach($result['data'] as $photo) {
               <div class="g-ytsubscribe" data-channelid="UCWme0IpQvwDicdxGqx2AcxQ" data-layout="default" data-count="hidden"></div>
             </div>
           </div>
-          <div class="row mt-3 pb-3">
+          <div class="row mt-3 pb-3 ">
             <div class="col">
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
@@ -169,9 +172,52 @@ foreach($result['data'] as $photo) {
       </div>
     </section>
 
+
+    <!-- Project -->
+    <section class="project" id="project">
+      <div class="container">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2>Project</h2>
+          </div>
+        </div>
+        <div class="row">
+
+        
+          <div class="col-md mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/pizza.jpeg" alt="Card image cap">
+             <div class="card-body text-center">
+             <p class="card-text">
+               aplikasi ini menyajikan menu pizza terstruktur berdasarkan kategori, menggunakan data yang dimuat dari file json.
+            </p>
+            <a href="http://localhost/rest-api/wpu-hut/latihan2.html" target="_blank" class="btn btn-dark mt-2">
+                See Detail
+            </a>
+             </div>
+            </div>
+          </div>
+
+          <div class="col-md mb-4">
+         <div class="card">
+           <img class="card-img-top" src="img/film.jpeg" alt="Card image cap">
+           <div class="card-body text-center">
+              <p class="card-text">
+                aplikasi ini menyajikan koleksi film berdasarkan kategori tertentu, menggunakan data yang diambil dari file json.
+              </p>
+              <a href="http://localhost/rest-api/wpu-movie/index.html" target="_blank" class="btn btn-dark mt-2">
+                See Detail
+              </a>
+            </div>
+           </div>
+          </div>
+
+
+
+
     
     <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio bg-light" id="portfolio">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
@@ -181,7 +227,7 @@ foreach($result['data'] as $photo) {
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/11.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/1.jpeg" alt="Card image cap">
               <div class="card-body">
                <p class="card-text"><strong>penunda profesional:</strong> spesialis nunda kerjaan sampe deadline tinggal 3 menit. skill: panik tapi produktif.</p>
               </div>
@@ -190,7 +236,7 @@ foreach($result['data'] as $photo) {
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/12.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/2.jpeg" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">bisa kerja di bawah tekanan, seperti tekanan hidup dan pertanyaan 'kapan lulus?'</p>
               </div>
@@ -199,7 +245,7 @@ foreach($result['data'] as $photo) {
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/14.jpeg" alt="Card image cap" style="width: 350px; height: 350px; object-fit: cover;">
+              <img class="card-img-top" src="img/thumbs/3.jpeg" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text"><strong>fast learner:</strong> bisa ngerti materi dalam 5 menit (setelah 5 jam breakdown).</p>
               </div>
@@ -210,7 +256,7 @@ foreach($result['data'] as $photo) {
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/15.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/4.jpeg" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text"><strong>hacker perasaan:</strong> jago ngartiin chat "ok" jadi 12 makna berbeda dalam waktu 2 detik.</p>
               </div>
@@ -218,7 +264,7 @@ foreach($result['data'] as $photo) {
           </div> 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/13.jpeg" alt="Card image cap" style="width: 350px; height: 460px; object-fit: cover;">
+              <img class="card-img-top" src="img/thumbs/5.jpeg" alt="Card image cap" >
               <div class="card-body">
                 <p class="card-text"><strong>overthinker kreatif:</strong> bisa bikin 3 plot film dari satu senyuman orang asing.</p>
                 </p>
@@ -228,7 +274,7 @@ foreach($result['data'] as $photo) {
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/16.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/6.jpeg" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text"><strong>penulis skenario kehidupan yang tidak terjadi:</strong> imajinasi terlalu aktif, kadang bingung mana yang beneran kejadian.</p>
               </div>
@@ -240,7 +286,7 @@ foreach($result['data'] as $photo) {
 
 
     <!-- Contact -->
-    <section class="contact bg-light" id="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
@@ -300,7 +346,7 @@ foreach($result['data'] as $photo) {
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <p>Copyright &copy; 2018.</p>
+            <p>ejii comell &copy; 2025.</p>
           </div>
         </div>
       </div>
