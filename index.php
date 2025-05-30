@@ -172,6 +172,69 @@ foreach($result['data'] as $photo) {
       </div>
     </section>
 
+
+    
+  <!-- Project -->
+<section class="project" id="project">
+  <div class="container">
+    <div class="row pt-4 mb-4">
+      <div class="col text-center">
+        <h2>Project</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="row g-0 h-100">
+            <div class="col-4">
+              <div class="h-100">
+                <img src="img/pizza.jpeg" class="img-fluid w-100 h-100 object-fit-cover rounded-start" alt="Pizza App">
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="card-body d-flex flex-column justify-content-between h-100">
+                <p class="card-text">
+                  Aplikasi ini menyajikan menu pizza terstruktur berdasarkan kategori, menggunakan data yang dimuat dari file JSON.
+                </p>
+                <a href="wpu-hut/latihan2.html" target="_blank" class="btn btn-dark mt-2">See Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="row g-0 h-100">
+            <div class="col-4">
+              <div class="h-100">
+                <img src="img/filmm.jpeg" class="img-fluid w-100 h-100 object-fit-cover rounded-start" alt="Film App">
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="card-body d-flex flex-column justify-content-between h-100">
+                <p class="card-text">
+                  Aplikasi ini menyajikan koleksi film berdasarkan kategori tertentu, menggunakan data yang diambil dari file JSON.
+                </p>
+                <a href="movie/index.html" target="_blank" class="btn btn-dark mt-2">See Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
     
     <!-- Portfolio -->
     <section class="portfolio bg-light" id="portfolio">
@@ -242,6 +305,7 @@ foreach($result['data'] as $photo) {
     </section>
 
 
+
     <!-- Contact -->
     <section class="contact" id="contact">
       <div class="container">
@@ -296,18 +360,23 @@ foreach($result['data'] as $photo) {
         </div>
       </div>
     </section>
+    
+
+
+
 
 
     <!-- footer -->
-    <footer class="bg-dark text-white mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <p>ejii comell &copy; 2025.</p>
-          </div>
-        </div>
+<footer class="bg-dark text-white mt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center py-3">
+        <p class="mb-0">ejii comell &copy; 2025.</p>
       </div>
-    </footer>
+    </div>
+  </div>
+</footer>
+
 
 
 
